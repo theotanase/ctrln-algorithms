@@ -1,0 +1,1 @@
+[{"city":"Bucharest","temperature":"24 degrees C"},{"city":"Constanta","temperature":"21 degrees C"},{"city":"Timisoara","temperature":"27 degrees C"},{"city":"Braila","temperature":"19 degrees C"},{"city":"Iasi","temperature":"24 degrees C"},{"city":"Suceava","temperature":"20 degrees C"},{"city":"Giurgiu","temperature":"22 degrees C"}]
