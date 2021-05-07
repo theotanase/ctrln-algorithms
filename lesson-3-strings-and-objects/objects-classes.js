@@ -21,4 +21,3 @@ for (const person of persons) {
         person.sayHello();
     }
 }
-
