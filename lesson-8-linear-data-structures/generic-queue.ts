@@ -16,9 +16,9 @@ class GenericQueue<T> {
 
 const queueOfStrings = new GenericQueue<string>();
 
-queueOfStrings.enqueue(4);
+// queueOfStrings.enqueue(4);
 
 
 const queueOfNumbers = new GenericQueue<number>();
 
-queueOfNumbers.enqueue("Ion");
+// queueOfNumbers.enqueue("Ion");
