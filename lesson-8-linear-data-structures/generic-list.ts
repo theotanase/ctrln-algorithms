@@ -1,9 +1,9 @@
-export default class MyLinkedList {
+export default class GenericList<T> {
 
   private start: any = null;
   private end: any = null;
 
-  insertFirst(value: any) {
+  insertFirst(value: T) {
     const newNode = this.createNode(value);
 
     newNode.next = this.start;
@@ -15,7 +15,7 @@ export default class MyLinkedList {
     this.start = newNode;
   }
 
-  insertLast(value: any) {
+  insertLast(value: T) {
     const newNode = this.createNode(value);
 
     if (this.end != null) {
@@ -73,7 +73,7 @@ export default class MyLinkedList {
     return this.start === null;
   }
 
-  private createNode(value: any) {
+  private createNode(value: T) {
     return {
       value: value,
       next: null
@@ -89,10 +89,3 @@ export default class MyLinkedList {
     }
   }
 }
-
-// const numbersList = new MyLinkedList();
-// numbersList.insertFirst(5);
-// numbersList.insertLast(10);
-// numbersList.deleteLast()
-// numbersList.printElements(); // 5
-

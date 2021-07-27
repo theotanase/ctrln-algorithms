@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 class MyLinkedList {
     constructor() {
         this.start = null;
@@ -25,12 +26,14 @@ class MyLinkedList {
     deleteFirst() {
         // start -> start.next
         if (this.isEmpty()) {
-            return;
+            return null;
         }
+        const value = this.start.value;
         this.start = this.start.next;
         if (this.start == null) {
             this.end = null;
         }
+        return value;
     }
     deleteLast() {
         // end -> nodului de la stanga
@@ -67,8 +70,9 @@ class MyLinkedList {
         }
     }
 }
-const numbersList = new MyLinkedList();
-numbersList.insertFirst(5);
-numbersList.insertLast(10);
-numbersList.deleteLast();
-numbersList.printElements(); // 5
+exports.default = MyLinkedList;
+// const numbersList = new MyLinkedList();
+// numbersList.insertFirst(5);
+// numbersList.insertLast(10);
+// numbersList.deleteLast()
+// numbersList.printElements(); // 5
