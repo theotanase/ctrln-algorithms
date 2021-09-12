@@ -1,6 +1,6 @@
 import GenericList from './generic-list';
 
-class GenericQueue<T> {
+export default class GenericQueue<T> {
 
   private storage = new GenericList<T>();
 
@@ -8,17 +8,21 @@ class GenericQueue<T> {
     this.storage.insertLast(element);
   }
 
-  dequeue() {
+  dequeue(): T {
     return this.storage.deleteFirst();
+  }
+
+  isEmpty() {
+    return this.storage.isEmpty();
   }
 }
 
 
-const queueOfStrings = new GenericQueue<string>();
+// const queueOfStrings = new GenericQueue<string>();
 
 // queueOfStrings.enqueue(4);
 
 
-const queueOfNumbers = new GenericQueue<number>();
+// const queueOfNumbers = new GenericQueue<number>();
 
 // queueOfNumbers.enqueue("Ion");

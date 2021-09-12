@@ -56,7 +56,7 @@ class MyHashTable {
         this.storage = newStorage;
     }
     getIndex(key) {
-        const hash = md5_1.default(key);
+        const hash = (0, md5_1.default)(key);
         const decimalHash = parseInt(hash, 16);
         const index = decimalHash % this.capacity;
         return index;

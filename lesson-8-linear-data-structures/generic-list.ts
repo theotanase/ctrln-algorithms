@@ -69,7 +69,7 @@ export default class GenericList<T> {
     }
   }
 
-  private isEmpty() {
+  public isEmpty() {
     return this.start === null;
   }
 

@@ -14,8 +14,12 @@ class GenericQueue {
     dequeue() {
         return this.storage.deleteFirst();
     }
+    isEmpty() {
+        return this.storage.isEmpty();
+    }
 }
-const queueOfStrings = new GenericQueue();
+exports.default = GenericQueue;
+// const queueOfStrings = new GenericQueue<string>();
 // queueOfStrings.enqueue(4);
-const queueOfNumbers = new GenericQueue();
+// const queueOfNumbers = new GenericQueue<number>();
 // queueOfNumbers.enqueue("Ion");
